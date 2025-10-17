@@ -15,3 +15,6 @@ python3 manage.py migrate
 
 # Start he local development server
 python3 manage.py runserver
+
+# To create a superuser : 
+python3 manage.py createsuperuser
