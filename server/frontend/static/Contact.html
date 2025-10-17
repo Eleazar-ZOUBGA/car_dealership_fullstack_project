@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dealerships</title>
+
+  <!-- Link the style sheets -->
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: darkturquoise;
+      height: 1in;
+    }
+
+    .navbar h2 {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .main-card {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 2%;
+      margin: 4% auto;
+      background-color: white;
+      width: 85%;
+    }
+
+    /* ===== IMAGE SECTION ===== */
+    .cars-image {
+      text-align: center;
+      margin-bottom: 25px;
+      overflow: hidden; /* coupe ce qui dépasse */
+      border-radius: 10px;
+    }
+
+    .cars-image img {
+      width: 100%;
+      height: 200px; /* Hauteur augmentée pour un format panoramique */
+      object-fit: cover; /* recadre pour éviter la déformation */
+      object-position: center 35%; /* centre la zone visible légèrement vers le bas */
+      display: block;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+
+    .contact-icon {
+      flex: 1;
+      text-align: center;
+      min-width: 250px;
+    }
+
+    .contact-icon img {
+      width: 120px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .contact-details {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .contact-details h5 {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .contact-details a {
+      color: darkturquoise;
+      text-decoration: none;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      color: gray;
+      font-size: 0.9em;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .cars-image img {
+        height: 120px;
+      }
+
+      .contact-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-icon {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger; font-weight:bold;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Card -->
+  <div class="main-card">
+    <!-- Top Cars Image -->
+    <div class="cars-image">
+      <img src="/static/cars.jpeg" alt="Cars showroom">
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="contact-section">
+      <!-- Left Icon -->
+      <div class="contact-icon">
+        <img src="/static/contactus.png" alt="Customer support icon">
+      </div>
+
+      <!-- Right Contact Details -->
+      <div class="contact-details">
+        <h5><strong>Contact Customer Service</strong></h5>
+        <p><a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+
+        <h5><strong>Contact our National Advertising team</strong></h5>
+        <p><a href="mailto:NationalSales@bestcars.com">NationalSales@bestcars.com</a></p>
+
+        <h5><strong>Contact our Public Relations team</strong></h5>
+        <p><a href="mailto:PR@bestcars.com">PR@bestcars.com</a></p>
+
+        <h5><strong>Contact the BestCars.com offices</strong></h5>
+        <p>312-611-1111</p>
+
+        <h5><strong>Become a BestCars.com car dealer</strong></h5>
+        <p><a href="https://growwithbestcars.com">Visit growwithbestcars.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Best Cars Dealership. All Rights Reserved.
+  </footer>
+</body>
+</html>
