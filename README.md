@@ -18,3 +18,8 @@ python3 manage.py runserver
 
 # To create a superuser : 
 python3 manage.py createsuperuser
+
+# To launch the database's server : 
+cd server/database
+docker build . -t nodeapp
+docker-compose up
